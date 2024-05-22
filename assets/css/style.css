@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #1149ae;
+  --white-color: #ffffff;
+  --gray-color: #6e6767;
+  --gry-color: #9e9e9e;
+  --green-color: #038803;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonlas__text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.testimonlas__text h3 {
+  color: var(--main-color);
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.testimonlas__text p {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+}
+
+.testimonlas__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimonlas__card {
+  width: 30%;
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.179);
+  border-radius: 10px;
+  padding: 2.6rem 2rem;
+}
+
+.testimonlas__image {
+  object-fit: contain;
+  background-color: var(--gry-color);
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  right: 2rem;
+  top: -3rem;
+}
+
+.testimonlas__icone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonlas__titel {
+  height: 2rem;
+  width: 12rem;
+  position: absolute;
+  right: -3px;
+  background-color: var(--green-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonlas__titel::after {
+  content: "";
+  background: var(--green-color);
+  height: 150%;
+  width: 10px;
+  position: absolute;
+  top: -16px;
+  right: -8px;
+  clip-path: polygon(0% 0.3%, 100.1% 38%, 100% 100%, 0% 100%);
+}
+
+.testimonlas__titel p {
+  color: white;
+}
+
+.testimonlas__box {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: gray;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 678px) {
+  .testimonlas__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .testimonlas__card {
+    width: 90%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.179);
+    border-radius: 10px;
+    padding: 2.6rem 2rem;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 678px) and (max-width: 991px) {
+  .testimonlas__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .testimonlas__card {
+    width: 80%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.179);
+    border-radius: 10px;
+    padding: 2.6rem 2rem;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .testimonlas__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .testimonlas__card {
+    width: 30%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.179);
+    border-radius: 10px;
+    padding: 2.6rem 2rem;
+    cursor: pointer;
+  }
+}
